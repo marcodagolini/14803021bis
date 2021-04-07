@@ -59,6 +59,11 @@
 
  	
  <script>
+	 
+	 
+function openMyChat(){
+	console.log("click");
+}
 	
  
 
@@ -78,9 +83,6 @@ function sendLocation(){
 		
 		function shoMyCustomButton(){
 			document.getElementById("myChat").style = "display : block";
-			document.getElementById("myChat")[0].onclick = function(){ 
-				alert("p is clicked and the id is "); 
-			}
 		}
 
 		
@@ -109,7 +111,7 @@ $(document).ready(function() {
  
   </script>
 	  
-	 <div id="myChat" class="myChat" style="display:none;">Chat!</div>
+	 <div id="myChat" class="myChat" style="display:none;" onclick="openMyChat()>Chat!</div>
 	 
 	 <div id="LivePersonProxyDiv"></div>
 
