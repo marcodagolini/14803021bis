@@ -78,7 +78,10 @@ function sendLocation(){
 		
 		function shoMyCustomButton(){
 			document.getElementById("myChat").style = "display : block";
-		}
+			document.getElementById("myChat")[0].onclick = function(){ 
+				alert("p is clicked and the id is "); 
+			} 
+
 		
 		lpTag.events.bind({
 			eventName : "OFFER_IMPRESSION",
