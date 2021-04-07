@@ -1,6 +1,29 @@
 <html>
  <head>
 	 
+<style>
+		 
+.myChat {
+  background-color: #FF0000;
+  color: white;
+  padding: 10px 10px;
+  border: none;
+  cursor: pointer;
+  width: 100px;
+  height: 30px;
+  font-size: 30px;
+  position: absolute;
+  top: 50px;
+  right: 40px;
+  text-align: center;
+}
+.myChat:hover {
+  background-color: #FF6969;
+}
+		 
+		 
+</style>
+	 
 	 
 	 
 	 
@@ -64,6 +87,7 @@ $(document).ready(function() {
  
   </script>
 	  
+	 <div id="myChat" class="myChat" style="display:none;">Chat!</div>
 	 
 	 <div id="LivePersonProxyDiv" width="1px" height="1px" style="display:none;"></div>
 
