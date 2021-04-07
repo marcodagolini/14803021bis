@@ -26,9 +26,18 @@
   background-color: #FF6969;
 }
 	
+.myLivePersonEngagement {
+    height: 150px !important;
+    width: 250px !important;
+    position: absolute !important;
+    bottom: 20px !important;
+    right: 20px !important;
+  }
+	
 .proxychat{
-  width: 1px;
-  height: 1px;
+  position: absolute;
+  bottom: 1000px;
+  right: 1000px;
 }
 		 
 		 
@@ -66,7 +75,7 @@
 	 
 function openMyChat(){
 	console.log("click");
-	$("#LivePersonProxyDiv").trigger("click");
+	document.getElementsByClassName('LPMcontainer')[0].click();
 }
 	
  
@@ -117,7 +126,7 @@ $(document).ready(function() {
 	  
 	 <div id="myChat" class="myChat" style="display:none;" onclick="openMyChat()">Chat!</div>
 	 
-	 <div id="LivePersonProxyDiv"></div>
+	 <div id="LivePersonProxyDiv" class="proxychat"></div>
 
 	 
  
