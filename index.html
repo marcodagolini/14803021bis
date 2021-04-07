@@ -71,6 +71,17 @@ function sendLocation(){
 			}
 		});
 		
+		function shoMyCustomButton(){
+			document.getElementById("myChat").style = "display : block";
+		}
+		
+		lpTag.events.bind({
+			eventName : "OFFER_CLICK",
+			appName : "LP_OFFERS",
+			func: shoMyCustomButton,
+			triggerOnce : false
+		});
+		
 	}, 3000);
 	
 }
