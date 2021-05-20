@@ -118,7 +118,7 @@ function sendLocation(){
 	 
 $(document).ready(function() {
 	sendLocation();
-	Swal.fire({
+	swal.fire({
   title: 'Do you want to save the changes?',
   showDenyButton: true,
   showCancelButton: true,
@@ -127,9 +127,9 @@ $(document).ready(function() {
 }).then((result) => {
   /* Read more about isConfirmed, isDenied below */
   if (result.isConfirmed) {
-    Swal.fire('Saved!', '', 'success')
+    swal.fire('Saved!', '', 'success')
   } else if (result.isDenied) {
-    Swal.fire('Changes are not saved', '', 'info')
+    swal.fire('Changes are not saved', '', 'info')
   }
 })
 });
