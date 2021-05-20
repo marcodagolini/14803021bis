@@ -116,7 +116,7 @@ function sendLocation(){
 	 
 	 
 $(document).ready(function() {
-	sendLocation();
+	
 	swal.fire({
 		title: 'Vuoi usare cookies di terze parti?',
 		showDenyButton: true,
@@ -125,9 +125,9 @@ $(document).ready(function() {
 		denyButtonText: `No`,
 	}).then((result) => {
 		if (result.isConfirmed) {
-			swal.fire('Saved!', '', 'success')
+			sendLocation();
 		} else if (result.isDenied) {
-			swal.fire('Changes are not saved', '', 'info')
+			// do something
 		}
 	})
 });
