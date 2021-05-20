@@ -119,19 +119,18 @@ function sendLocation(){
 $(document).ready(function() {
 	sendLocation();
 	swal.fire({
-  title: 'Do you want to save the changes?',
-  showDenyButton: true,
-  showCancelButton: true,
-  confirmButtonText: `Save`,
-  denyButtonText: `Don't save`,
-}).then((result) => {
-  /* Read more about isConfirmed, isDenied below */
-  if (result.isConfirmed) {
-    swal.fire('Saved!', '', 'success')
-  } else if (result.isDenied) {
-    swal.fire('Changes are not saved', '', 'info')
-  }
-})
+		title: 'Vuoi usare cookies di terze parti?',
+		showDenyButton: true,
+		showCancelButton: false,
+		confirmButtonText: `Si`,
+		denyButtonText: `No`,
+	}).then((result) => {
+		if (result.isConfirmed) {
+			swal.fire('Saved!', '', 'success')
+		} else if (result.isDenied) {
+			swal.fire('Changes are not saved', '', 'info')
+		}
+	})
 });
 	
 	 
